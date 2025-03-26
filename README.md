@@ -39,3 +39,12 @@ chomd +x 把桌面ResourceConverter.sh文件拖进来
 - 驱动加载顺序
 ![截屏2025-03-27 03 00 28](https://github.com/user-attachments/assets/df7f8473-3487-4c9e-ae3a-f05ba6e73780)
 
+2.clover引导
+![截屏2025-03-27 03 12 55](https://github.com/user-attachments/assets/30ec45fb-71f0-4628-84b7-af55589910e3)
+#
+到这里这里就完成了重启电脑就好了
+
+[技术支持](https://m.tb.cn/h.6d6akvV?tk=e85zeFZn3IX)
+
+
+
