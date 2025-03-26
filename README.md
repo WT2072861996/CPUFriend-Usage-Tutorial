@@ -2,11 +2,10 @@
 ## 准备文件
 ![截屏2025-03-27 01 50 39](https://github.com/user-attachments/assets/8acff8ca-8129-4f32-ae29-0d68a3600c28)
 
-- 下载CPUCFriend文件[下载](https://github.com/acidanthera/CPUFriend)
+1.下载CPUCFriend文件[下载](https://github.com/acidanthera/CPUFriend)
+- 把CPUFriend.kext--ResourceConverter.sh拖到桌面
 
- 把CPUFriend.kext--ResourceConverter.sh拖到桌面
-
-- MAC-xxxxxx.plist文件获取
+2.MAC-xxxxxx.plist文件获取
 - 访达前往这个文件地址
 
   ```
