@@ -33,9 +33,9 @@ chomd +x 把桌面ResourceConverter.sh文件拖进来
 4.回车之后桌面会生成一个CPUFriendDataProvider.kext文件
   
 ## 引导文件配置
-open core引导
+1.open core引导
 ![截屏2025-03-27 03 07 43](https://github.com/user-attachments/assets/165f7268-f1f6-44d0-9eec-767038db1fe9)
 
-驱动加载顺序
+- 驱动加载顺序
 ![截屏2025-03-27 03 00 28](https://github.com/user-attachments/assets/df7f8473-3487-4c9e-ae3a-f05ba6e73780)
 
