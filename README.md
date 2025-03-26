@@ -14,3 +14,19 @@
 - 找到和你电脑Board ID一样的plist文件拖到桌面,到这里所有文件都准备好了就可以开始下一步了
 
 ## 开始教程
+1.打开终端输入:
+```
+cd desktop
+```
+2.回车继续输入;
+```
+chomd +x 把桌面ResourceConverter.sh文件拖进来
+```
+列:chomd +x/Users/xxx/Desktop/ResourceConverter.sh
+
+3.回车继续输入:
+```
+把桌面ResourceConverter.sh文件拖进来 --kext 把桌面的Mac-xxxxxx.plist文件也拖进来
+```
+列:/Users/xx/Desktop/ResourceConverter.sh --kext/Users/xx/Desktop/Mac-xxxxx.plist
+
