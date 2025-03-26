@@ -29,6 +29,7 @@ chomd +x 把桌面ResourceConverter.sh文件拖进来
 把桌面ResourceConverter.sh文件拖进来 --kext 把桌面的Mac-xxxxxx.plist文件也拖进来
 ```
 - 列: /Users/xx/Desktop/ResourceConverter.sh --kext /Users/xx/Desktop/Mac-xxxxx.plist
+
 4.回车之后桌面会生成一个CPUFriendDataProvider.kext文件
   
 ## 引导文件配置
