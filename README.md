@@ -22,11 +22,11 @@ cd desktop
 ```
 chomd +x 把桌面ResourceConverter.sh文件拖进来
 ```
-列:chomd +x /Users/xxx/Desktop/ResourceConverter.sh
+- 列: chomd +x /Users/xxx/Desktop/ResourceConverter.sh
 
 3.回车继续输入:
 ```
 把桌面ResourceConverter.sh文件拖进来 --kext 把桌面的Mac-xxxxxx.plist文件也拖进来
 ```
-列:/Users/xx/Desktop/ResourceConverter.sh --kext /Users/xx/Desktop/Mac-xxxxx.plist
+- 列: /Users/xx/Desktop/ResourceConverter.sh --kext /Users/xx/Desktop/Mac-xxxxx.plist
 
