@@ -1,50 +1,60 @@
-# CPUFriend-Usage-Tutorial
-## 准备文件
-![截屏2025-03-27 01 50 39](https://github.com/user-attachments/assets/8acff8ca-8129-4f32-ae29-0d68a3600c28)
+# 🔧 CPUFriend 使用教程
 
-1.下载CPUCFriend文件[下载](https://github.com/acidanthera/CPUFriend)
-- 把CPUFriend.kext--ResourceConverter.sh拖到桌面
+<p align="center">
+  <img src="https://img.shields.io/badge/工具-CPUFriend-blue" alt="CPUFriend" />
+  <img src="https://img.shields.io/badge/平台-macOS-0071C5?logo=apple&logoColor=white" alt="macOS" />
+  <img src="https://img.shields.io/badge/用途-CPU_电源管理-green" alt="Usage" />
+</p>
 
-2.MAC-xxxxxx.plist文件获取
-- 访达前往这个文件地址
+一份简洁的 CPUFriend 使用指南，帮助你优化 Hackintosh 的 CPU 电源管理。
 
-  ```
-  /System/Library/Extensions/IOPlatformPluginFamily.kext/Contents/PlugIns/X86PlatformPlugin.kext/Contents/Resources/
-  ```
-- 找到和你电脑Board ID一样的plist文件拖到桌面,到这里所有文件都准备好了就可以开始下一步了
+---
 
-## 开始教程
-1.打开终端输入:
+## 📦 准备文件
+
+![准备文件](https://github.com/user-attachments/assets/8acff8ca-8129-4f32-ae29-0d68a3600c28)
+
+---
+
+### Step 1：下载 CPUFriend
+
+1. 从 [acidanthera/CPUFriend](https://github.com/acidanthera/CPUFriend) 下载最新版本
+2. 将 `CPUFriend.kext` 和 `ResourceConverter.sh` 拖到桌面
+
+---
+
+### Step 2：获取 MAC-xxxxxx.plist 文件
+
+1. 打开「访达」，前往路径：
+
+   ```
+   /System/Library/Extensions/IOPlatformPluginFamily.kext/Contents/PlugIns/X86PlatformPlugin.kext/Contents/Resources/
+   ```
+
+2. 找到与你电脑 **Board ID** 对应的 `.plist` 文件，拖到桌面
+
+---
+
+### Step 3：生成自定义电源管理文件
+
+在终端运行以下命令生成自定义 `CPUFriendDataProvider.kext`：
+
+```bash
+# 将 /path/to/your/plist 替换为你实际的 plist 文件路径
+./ResourceConverter.sh --kext /path/to/your/plist.plist
 ```
-cd desktop
-```
-2.回车继续输入;
-```
-chomd +x 把桌面ResourceConverter.sh文件拖进来
-```
-- 列: chomd +x /Users/xxx/Desktop/ResourceConverter.sh
 
-3.回车继续输入:
-```
-把桌面ResourceConverter.sh文件拖进来 --kext 把桌面的Mac-xxxxxx.plist文件也拖进来
-```
-- 列: /Users/xx/Desktop/ResourceConverter.sh --kext /Users/xx/Desktop/Mac-xxxxx.plist
+> 生成的 `CPUFriendDataProvider.kext` 需与 `CPUFriend.kext` 同时放入 OC/Clover 的 kexts 目录。
 
-4.回车之后桌面会生成一个CPUFriendDataProvider.kext文件
-  
-## 引导文件配置
-1.open core引导
-![截屏2025-03-27 03 07 43](https://github.com/user-attachments/assets/165f7268-f1f6-44d0-9eec-767038db1fe9)
+---
 
-- 驱动加载顺序
-![截屏2025-03-27 03 00 28](https://github.com/user-attachments/assets/df7f8473-3487-4c9e-ae3a-f05ba6e73780)
+## ✅ 检查是否生效
 
-2.clover引导
-![截屏2025-03-27 03 12 55](https://github.com/user-attachments/assets/30ec45fb-71f0-4628-84b7-af55589910e3)
-#
-到这里这里就完成了重启电脑就好了
+- 使用 Intel Power Gadget 查看 CPU 频率和功耗
+- 使用 Hackintool 查看 CPU 变频档位
 
-[技术支持](https://m.tb.cn/h.6d6akvV?tk=e85zeFZn3IX)
+---
 
-
-
+<div align="center">
+  <img src="https://img.shields.io/badge/参考-acidanthera-00A3E0?logo=github" alt="Reference">
+</div>
